@@ -70,6 +70,9 @@ body{
 .top-header-content{
   padding: 2px 0;
 }
+.top-header-content a{
+  color: #86c33a;
+}
 .gray-border{
   padding-right: 20px;
   border-right: 0.5px solid gray;
@@ -330,6 +333,7 @@ h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .about-bg{
   background-image: url(../images/about-us-bg.png);
@@ -340,6 +344,8 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .about-bg img{
   width: 80%;
@@ -348,6 +354,8 @@ h2{
 .about-text{
   display: flex;
   flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .green-lines{
   display: flex;
@@ -483,6 +491,7 @@ h2{
   width: 41.6%;
   height: auto;
   padding-left: 15px;
+  padding-right: 15px;
   position: relative;
 }
 .feature-bg{
@@ -641,11 +650,12 @@ h2{
 }
 
 .team-text{
-  padding-top: 400px;
+  margin-top: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 15px;
 }
 .teams{
   display: flex;
@@ -745,11 +755,127 @@ h2{
 .marginnone{
   margin: 0;
 }
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: #ddd;
+}
 .footer-top{
   background-color: #252D39;
+  display: flex;
+}
+.footer-info{
+  width: 41.6%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 48px;
+}
+.footer-right{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer-icons{
+  display: flex;
+}
+.footer-icon a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
 .footer-icon a img{
-  width: 10px;
+  width: 15px;
+}
+.copyright{
+  background-color: #1F2630;
+}
+.footer-logo{
+  margin-bottom: 1.5rem;
+}
+.text-light{
+  margin-bottom: 1rem;
+}
+.mb-5{
+  margin-bottom: 3rem;
+}
+.white-text{
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 22px;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.footer-right-top{
+  width: 50%;
+  margin-bottom: 48px;
+}
+.footer-right-bottom{
+  width: 100%;
+}
+.footer-text-container{
+  display: flex;
+}
+.subscribe{
+  width: 100%;
+}
+form{
+  position: relative;
+}
+.email{
+  height: 55px;
+  padding: 0 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  color: #fff;
+  border: none;
+  width: 100%;
+}
+.sub-btn{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #86c33a;
+  color: white;
+  border: none;
+  padding: 15.5px 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.email::placeholder{
+  color: white;
+}
+.copyright .container{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    color: white;
+}
+.copyleft{
+  display: flex;
+  gap: 5px;
+}
+.green{
+  color: #86c33a;
+}
+.copy-right a{
+  color: white;
+  padding: 2px 1rem;
+  border-right: 0.5px solid white;
+}
+.copy-right > :nth-child(2){
+  border: none;
 }
 @media only screen and (max-width: 1200px){
   .container{
@@ -813,10 +939,24 @@ h2{
     width: 46%;
     margin-bottom: 3rem;
   }
+  .footer-top .container{
+    flex-direction: column;
+  }
+  .footer-info{
+    width: 100%;
+  }
+  .footer-right{
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .container{
     max-width: 540px;
+  }
+  .header-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
   .aboutUs{
     flex-direction: column;
@@ -833,18 +973,35 @@ h2{
   #about{
     margin-bottom: 50px;
   }
+  .cards{
+    gap: 15px;
+  }
   .card{
     width: 100%;
+    margin: 0;
+    padding: 0 15px 0 0;
   }
   .team-text{
     padding-top: 1500px;
+  }
+  .copyright .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  footer .container{
+    padding: 100px 0;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .container {
-    max-width: 540px;
-  }
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;  }
   .box{
     width: 100%;
   }
