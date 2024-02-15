@@ -655,6 +655,9 @@ h2{
   justify-content: center;
   padding: 0 15px;
 }
+.team-text .about-big{
+  text-align: center;
+}
 .teams{
   display: flex;
   flex-wrap: wrap;
@@ -663,6 +666,7 @@ h2{
   width: 33.33%;
   padding: 0 15px;
   display: flex;
+  gap: 50px;
   flex-direction: column;
 }
 .team-icon{
@@ -736,8 +740,9 @@ h2{
 }
 .case-study{
   display: flex;
-  padding: 155px 0 24px;
+  padding: 150px 0 34px 0;
 }
+
 .case-context{
   width: 66.66%;
   padding: 0 15px;
@@ -931,7 +936,34 @@ form{
   background-size: cover;
   position: absolute;
 }
-
+/*  */
+.project{
+  padding-bottom: 150px;
+}
+.projects{
+  display: flex;
+  width: 100%;
+}
+.project-container{
+  width: 25%;
+}
+.project-main{
+  width: 100%;
+  height: auto;
+}
+.project-text{
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+.h6-green{
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #86c33a;
+  padding-bottom: 0.5rem;
+  font-size: 16px;
+}
 /*  */
 .news{
   padding:  0 15px;
@@ -1109,6 +1141,13 @@ section {
   .overlay-content{
     width: 83%;
   }
+  .projects{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project-container{
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .container{
@@ -1173,6 +1212,9 @@ section {
     width: 100%;
   }
   .team{
+    width: 100%;
+  }
+  .project-container{
     width: 100%;
   }
 }
