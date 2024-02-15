@@ -1,0 +1,24 @@
+.bg-gray-white{
+  background-image: linear-gradient(to right, #f5f6fa 45%, #fff 0%);
+}
+.section-blue{
+  background-color: #252d39;
+  padding: 150px 0 240px;
+  position: relative;
+}
+.section-blue .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.service-bg{
+  width: 100%;
+}
+.service-bg img{
+  width: 100%;
+}

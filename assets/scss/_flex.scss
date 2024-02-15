@@ -1,0 +1,32 @@
+.d-flex{
+  display: flex;
+}
+.t-align{
+  text-align: center;
+}
+.cover{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contain{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.justify-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justify-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

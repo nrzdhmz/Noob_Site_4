@@ -1,0 +1,21 @@
+.projects{
+  width: 100%;
+}
+.project-container{
+  width: 25%;
+}
+.project-main{
+  width: 100%;
+  height: auto;
+}
+.project-text{
+  display: flex;
+  flex-direction: column;
+}
+.h6-green{
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #86c33a;
+  font-size: 16px;
+}

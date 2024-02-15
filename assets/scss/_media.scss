@@ -1,0 +1,168 @@
+
+.container{
+  margin: 0 auto;
+  width: 1140px;
+}
+
+
+@media only screen and (max-width: 1200px){
+  .container{
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container{
+    max-width: 720px;
+  }
+  .navbar{
+    display: none;
+  }
+  .funfacts .container::before{
+    display: none;
+  }
+  .funfacts .container{
+    transform: translateX(0px);
+    max-width: fit-content;
+  }
+  .facts{
+    flex-wrap: wrap;
+  }
+  .fact{
+    width: 50%;
+  }
+  .choose{
+    flex-direction: column-reverse;
+  }
+  .choose-left{
+    width: 100%;
+    margin-left: 0;
+  }
+  .choose-bg{
+    width: 100%;
+    margin: 0 0 48px;
+  }
+  .feature-bg{
+    display: none;
+  }
+  .choose-bg img{
+    width: 100%;
+  }
+  .boxes{
+    justify-content: space-between;
+  }
+  .box{
+    width: 47%;
+  }
+  .after-img , .before-img{
+    display: none;
+  }
+  .cards{
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 45.8%;
+    margin-bottom: 1.5rem;
+  }
+  .team-text{
+    padding-top: 400px;
+  }
+  .team{
+    width: 46%;
+    margin-bottom: 3rem;
+  }
+  .footer-top .container{
+    flex-direction: column;
+  }
+  .footer-info{
+    width: 100%;
+  }
+  .footer-right{
+    width: 100%;
+  }
+  .news-cards{
+    flex-wrap: wrap;
+  }
+  .news-card{
+    margin-bottom: 1rem;
+    width: 45.8%;
+  }
+  .overlay-content{
+    width: 83%;
+  }
+  .projects{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project-container{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container{
+    max-width: 540px;
+  }
+  .header-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .aboutUs{
+    flex-direction: column;
+  }
+  .about-bg{
+    width: 95%;
+  }
+  .about-text{
+    width: 100%;
+  }
+  .about-bg img{
+    width: 100%;
+  }
+  #about{
+    margin-bottom: 50px;
+  }
+  .cards{
+    gap: 15px;
+  }
+  .card{
+    width: 100%;
+    margin: 0;
+    padding: 0 15px 0 0;
+  }
+  .team-text{
+    padding-top:1100px;
+  }
+  .copyright .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  footer .container{
+    padding: 100px 0;
+  }
+  .news-card{
+    width: 100%;
+  }
+  .overlay-content{
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;  }
+  .box{
+    width: 100%;
+  }
+  .team{
+    width: 100%;
+  }
+  .project-container{
+    width: 100%;
+  }
+}

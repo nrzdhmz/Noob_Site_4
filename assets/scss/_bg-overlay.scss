@@ -1,0 +1,28 @@
+.overlay-secondary {
+  position: relative;
+}
+.bg-fixed {
+  background-attachment: fixed;
+  background-image: url(../images/cta-lg.jpg);
+}
+.section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.overlay-secondary::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #252d39;
+  opacity: 0.85;
+}
+::before {
+  box-sizing: border-box;
+}
+.overlay-content{
+  width: 55%;
+  text-align: center;
+}

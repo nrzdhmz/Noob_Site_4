@@ -1,0 +1,48 @@
+.funfacts .container{
+  transform: translateX(-50px);
+  position: relative;
+}
+.funfacts .container::before{
+  position: absolute;
+  content: "";
+  right: 100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #252d39;
+}
+.facts{
+  display: flex;
+  background-color: #252d39;
+  color: white;
+  padding: 48px;
+}
+.fact{
+  display: flex;
+  gap: 15px;
+  width: 25%;
+  align-items: center;
+  padding: 0 15px;
+}
+.fact-count{
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.fact-icon{
+  width: 55px;
+  height: 55px;
+}
+.fact1{
+  background-image: url(../svg/bullseye.svg);
+}
+.fact2{
+  background-image: url(../svg/calendar.svg);
+}
+.fact3{
+  background-image: url(../svg/trophy.svg);
+}
+.fact4{
+  background-image: url(../svg/smile.svg);
+}

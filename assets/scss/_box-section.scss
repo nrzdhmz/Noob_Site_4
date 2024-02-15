@@ -1,0 +1,68 @@
+.box-section{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  position: relative;
+}
+.boxes{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+  margin-top: -90px;
+  .box{
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    width: 22%;
+    height: 350px;
+    background-color: white;
+    color: white;
+    box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1);
+    color: black;
+    .box-icon{
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+    }
+    &:hover{
+      background-color: #172231;
+      color: white;
+    }
+  }
+}
+#box1{
+  background-color: #172231;
+  color: white;
+}
+#box-icon-1{
+  background-image: url(../svg/diamond.svg);
+}
+#box-icon-2{
+  background-image: url(../svg/chart.svg);
+  filter: invert(100%);
+}
+#box-icon-3{
+  background-image: url(../svg/light.svg);
+  filter: invert(100%);
+}
+#box-icon-4{
+  background-image: url(../svg/speed.svg);
+  filter: invert(100%);
+}
+.box-big{
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 22px;
+}

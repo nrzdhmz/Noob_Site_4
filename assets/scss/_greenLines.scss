@@ -1,0 +1,19 @@
+.green-lines{
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  .line{
+    background-color: #86C33A;
+    height: 5px;
+    border-radius: 2px;
+  }
+  .one{
+    width: 32px;
+  }
+  .two{
+    width: 13px;
+  }
+  .three{
+    width: 8px;
+  }
+}
